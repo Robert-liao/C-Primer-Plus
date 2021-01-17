@@ -23,6 +23,7 @@
 * 修改说明：无
 *****************************************************/
 void Print(char source[ROW][SIZE]);
+
 /***********************************************************
 * 函 数 名：ASCIIsortPrint
 * 函数功能：以ASCII编码中的顺序打印字符串
@@ -37,6 +38,7 @@ void Print(char source[ROW][SIZE]);
 * 修改说明：无
 ***********************************************************/
 void ASCIIsortPrint(char souce[ROW][SIZE]);
+
 /**********************************************************
 * 函 数 名：ASCIIsort
 * 函数功能：将字符串的内容以ASCII码的顺序排列，然后输出
@@ -49,6 +51,7 @@ void ASCIIsortPrint(char souce[ROW][SIZE]);
 * 修改说明：无
 **********************************************************/
 void ASCIIsort(char source[SIZE]);
+
 /**********************************************************
 * 函 数 名：IncreasePrint
 * 函数功能：按长度递增顺序打印字符串
@@ -62,6 +65,7 @@ void ASCIIsort(char source[SIZE]);
 * 修改说明：无
 **********************************************************/
 void IncreasePrint(char souce[ROW][SIZE]);
+
 /**********************************************************
 * 函 数 名：PrintFirstWordlenght
 * 函数功能：按字符串中第1个单词的长度打印字符串
@@ -74,6 +78,7 @@ void IncreasePrint(char souce[ROW][SIZE]);
 * 修改说明：无
 **********************************************************/
 void PrintFirstWordlenght(char source[ROW][SIZE]);
+
 /**********************************************************
 * 函 数 名：SeekArrayMinSubscript
 * 函数功能：寻找数组中最小值的下标
@@ -90,14 +95,14 @@ int main()
 {
     char input, String[ROW][SIZE], copy[ROW][SIZE], ch;
     int j = 0, k = 1;
-    FILE *fp;
-    fp = fopen("test.txt", "r");
+    FILE *fp;      
+    fp = fopen("test.txt", "r"); //使用只读的方式打开文件
     if (fp == NULL)
     {
         printf("File open failed\n");
         exit(0);
     }
-    for (size_t i = 0; i < ROW; i++) //输入10个字符串
+    for (size_t i = 0; i < ROW; i++) //读取文件里面的10个字符串
     {
         fgets(String[i], SIZE, fp);
         strcpy(copy[i], String[i]);
