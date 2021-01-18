@@ -1,4 +1,22 @@
+/******************************************
+*File name:ProgrammingPracticeEight.c
+*Description:C primer plus 第十章课后编程8题
+*Version:1.0
+*Author:Robert
+*Create time:2021-1-18
+********************************************/
 #include<stdio.h>
+/******************************************************
+*函数名：copy_ptr
+*函数功能：将source数组中的number个元素拷贝到tareget数组中
+*输入参数：两个double类型的数组与一个int类型的待拷贝元素个数
+*输出参数：无
+*返回值：无
+*Author:Robert
+*Create time:2021-1-18
+*其他说明：无
+*修改说明：无
+********************************************************/
 void copy_ptr(double *tareget,double *source,int number);
 int main()
 {

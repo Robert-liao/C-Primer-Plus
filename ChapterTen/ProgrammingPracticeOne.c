@@ -1,7 +1,14 @@
+/******************************************
+*File name:ProgrammingPracticeOne.c
+*Description:C primer plus 第十章课后编程1题
+*Version:1.0
+*Author:Robert
+*Create time:2021-1-18
+********************************************/
 #include <stdio.h>
 #define MONTHS 12
 #define YEARS 5
-int main(void)
+int main(void)//计算每年的总降水量、年平均降水量和5年中每月的平均降水量
 {
     const float rain[YEARS][MONTHS] = {
         {4.3, 4.3, 4.3, 3.0, 2.0, 1.2, 0.2, 0.2, 0.4, 2.4, 3.5, 6.6},
@@ -14,20 +21,20 @@ int main(void)
     float subtot, total;
     printf(" YEAR  RAINFALL (inches)\n");
     for (year = 0, total = 0; year < YEARS; year++)
-    {
+    {          //每一年，各月的降水量总和
         for (month = 0, subtot = 0; month < MONTHS; month++)
         {
             subtot += *(*(rain + year) + month); //等价于rain[year][month]
         }
         printf("%5d %15.1f\n", 2010 + year, subtot);
-        total += subtot;
+        total += subtot;//5年的总降水量
     }
     printf("\nThe yearly average is %.1f inches.\n\n", total / YEARS);
     printf("MONTHLY AVERAGES:\n\n");
     printf(" Jan Feb Mar Apr May Jun Jul Aug Sep Oct ");
     printf(" Nov Dec\n");
     for ( month = 0; month < MONTHS; month++)
-    {
+    {     //没个月，5年的总降水量
         for (year  = 0,subtot=0; year < YEARS; year++)
         {
             subtot+=*(*(rain+year)+month);

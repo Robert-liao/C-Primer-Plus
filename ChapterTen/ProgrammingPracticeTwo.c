@@ -1,6 +1,46 @@
+/******************************************
+*File name:ProgrammingPracticeTwowo.c
+*Description:C primer plus 第十章课后编程2题
+*Version:1.0
+*Author:Robert
+*Create time:2021-1-18
+********************************************/
 #include <stdio.h>
+/***************************************************************
+*函数名：copy_arr
+*函数功能：使用数组表示法将source数组中的number个元素拷贝至target数组中
+*输入参数：两个double类型的数组和待拷贝的元素的个数
+*输出参数：无
+*返回值：无
+*Author:Robert
+*Create time:2021-1-18
+*其他说明：无
+*修改说明无：
+****************************************************************/
 void copy_arr(double tareget[], double source[], int number);
+/***************************************************************
+*函数名：copy_ptr
+*函数功能：使用指针表示法将source数组中的number个元素拷贝至target数组中
+*输入参数：两个double类型的数组地址和待拷贝的元素的个数
+*输出参数：无
+*返回值：无
+*Author:Robert
+*Create time:2021-1-18
+*其他说明：无
+*修改说明无：
+****************************************************************/
 void copy_ptr(double *tareget,double *source,int number);
+/***************************************************************
+*函数名：copy_ptrs
+*函数功能：使用指针表示法将source数组中的内容拷贝至target数组中
+*输入参数：两个double类型的数组地址以及source数组最后一个元素的地址
+*输出参数：无
+*返回值：无
+*Author:Robert
+*Create time:2021-1-18
+*其他说明：无
+*修改说明无：
+****************************************************************/
 void copy_ptrs(double *target,double *source,double *numble);
 int main()
 {

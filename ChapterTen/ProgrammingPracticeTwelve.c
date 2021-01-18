@@ -1,6 +1,24 @@
+/******************************************
+*File name:ProgrammingPracticeTwelve.c
+*Description:C primer plus 第十章课后编程12题
+*Version:1.0
+*Author:Robert
+*Create time:2021-1-18
+********************************************/
 #include <stdio.h>
 #define MONTHS 12
 #define YEARS 5
+/***************************************************************
+*函数名：fun
+*函数功能：计算每年的总降水量、年平均降水量和5年中每月的平均降水量
+*输入参数：float类型的二维数组
+*输出参数：年平均降水量和5年中每月的平均降水量
+*返回值：无
+*Author:Robert
+*Create time:2021-1-18
+*其他说明：无
+*修改说明无：
+****************************************************************/
 void fun(const float rain[][MONTHS]);
 int main(void)
 {
