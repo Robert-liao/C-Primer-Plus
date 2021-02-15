@@ -1,4 +1,19 @@
+/**********************************************
+*File name:     ProgrammingPracticeFive.c
+*Description:   C primer plus 第六章课后编程5题
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-15
+*********************************************/
 #include <stdio.h>
+/**********************************************************
+*函数的功能：提示用户输入大写字母，使用嵌套循环以如下形式打印字母：
+*                   A
+*                  ABA
+*                 ABCBA
+*                ABCDCBA
+*               ABCDEDCBA
+************************************************************/
 int main()
 {
     char alphabet;

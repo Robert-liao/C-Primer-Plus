@@ -1,4 +1,23 @@
+/******************************************
+*File name:ProgrammingPracticeSeven.c
+*Description:C primer plus 第九章课后编程7题
+*Version:1.0
+*Author:Robert
+*Create time:2021-1-25
+********************************************/
 #include<stdio.h>
+/*****************************************************
+*函数名：JudgementLitter
+*函数功能：判断形参是否是字母，若是则报告该字母在字母表中的数值
+*         位置，反之函数返回-1
+*输入参数：char类型变量
+*输出参数：无
+*返回值：-1或该字母在字母表中的数值位置
+*Author:Robert
+*Create time:2021-1-25
+*其他说明：
+*修改说明无：
+*******************************************************/
 int JudgementLitter(char ch);
 int main()
 {

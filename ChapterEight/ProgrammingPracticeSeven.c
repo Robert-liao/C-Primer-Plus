@@ -1,3 +1,12 @@
+/**********************************************
+*File name:     ProgrammingPracticeSeven.c
+*Description:   C primer plus 第八章课后编程7题。
+*               内容与第7章的第8题基本一样，只是
+*               用字符代替了数字标记菜单的选项。
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-7
+*********************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #define GRADEONE 8.75

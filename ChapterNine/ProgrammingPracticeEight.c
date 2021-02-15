@@ -1,4 +1,23 @@
+/******************************************
+*File name:ProgrammingPracticeEight.c
+*Description:C primer plus 第九章课后编程8题
+*Version:1.0
+*Author:Robert
+*Create time:2021-1-25
+********************************************/
 #include <stdio.h>
+/*****************************************************
+*函数名：power
+*函数功能：计算n的p次幂
+*输入参数：一个double类型和一个int类型
+*输出参数：无
+*返回值：n的p次幂(double类型)
+*Author:Robert
+*Create time:2021-1-25
+*其他说明：函数在处理0的任何次幂都为0，任何数的0次幂都为1
+*         同时函数报告0的0次幂未定义，会将该值处理为1
+*修改说明无：
+*******************************************************/
 double power(double n, int p);
 int main()
 {

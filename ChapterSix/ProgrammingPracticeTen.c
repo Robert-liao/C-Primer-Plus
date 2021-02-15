@@ -1,4 +1,16 @@
+/**********************************************
+*File name:     ProgrammingPracticeTen.c
+*Description:   C primer plus 第六章课后编程10题
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-15
+*********************************************/
 #include <stdio.h>
+/****************************************************************
+*函数的功能：输入上下限整数，程序计算从上限到下限范围内所有整数的平方和
+*           并显示结果。程序一直循环，直到输入的上限整数等于或小于下限
+*           整数为止。
+*****************************************************************/
 int main()
 {
     int UpperLimit, LowerLimit;
@@ -9,7 +21,7 @@ int main()
         /* code */
 
         count = scanf("%d %d", &LowerLimit, &UpperLimit);
-        if (count != 2 || UpperLimit == LowerLimit)
+        if (count != 2 || UpperLimit == LowerLimit||UpperLimit<LowerLimit)
         {
             printf("Done");
             break;

@@ -1,5 +1,13 @@
+/**********************************************
+*File name:    ProgrammingPracticeOne.c
+*Description:   C primer plus 第五章课后编程1题
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-15
+*********************************************/
 #include <stdio.h>
 #define MINUTE 60
+//函数的功能：把分钟表示的时间转换成小时和分钟表示。
 int main()
 {
     int time, minute, hour;

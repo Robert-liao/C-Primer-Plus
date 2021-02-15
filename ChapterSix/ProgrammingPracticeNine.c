@@ -1,5 +1,13 @@
+/**********************************************
+*File name:     ProgrammingPracticeNine.c
+*Description:   C primer plus 第六章课后编程9题
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-15
+*********************************************/
 #include <stdio.h>
 float functionOne(float a, float b);
+//使用函数的方式修改了编程第8题。
 int main()
 {
     float numberOne, numberTwo;

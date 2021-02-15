@@ -1,3 +1,10 @@
+/**********************************************
+*File name:     ProgrammingPracticeSeven.c
+*Description:   C primer plus 第七章课后编程7题
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-15
+*********************************************/
 #include <stdio.h>
 #define WAGE 10.00             //资本工资
 #define LengthOfWork 40        //工作时长
@@ -7,9 +14,42 @@
 #define BeforeRate 0.15        //前300美元的税率
 #define AfterRate 0.2          //续150美元的税率
 #define Rest 0.25              //余下的税率
-double BasicWage(float hour);  //算基础工资(也就是300以内的)
-double NoBasicWge(float hour); //算300以后的工资
-double TAXES(double wage);     //算税金
+/*********************************************************************
+* 函 数 名：BasicWage
+* 函数功能：求取工资的额度
+* 输入参数：float类型的变量(工作的时长)
+* 输出参数：无
+* 返 回 值: 工资的额度
+* Author ： Robert
+* Create Time: 2021-2-15
+* 其他说明：该函数只适用于工作时长不超过40小时(即不存在加班现象)的情况
+* 修改说明：无
+********************************************************************/
+double BasicWage(float hour);
+/*********************************************************************
+* 函 数 名：NoBasicWage
+* 函数功能：求取工资的额度
+* 输入参数：float类型的变量(工作的时长)
+* 输出参数：无
+* 返 回 值: 工资的额度
+* Author ： Robert
+* Create Time: 2021-2-15
+* 其他说明：该函数适用于工作时长超过40小时(即存在加班现象)的情况
+* 修改说明：无
+********************************************************************/
+double NoBasicWge(float hour); 
+/****************************************************
+* 函 数 名：TAXES
+* 函数功能：求取税金
+* 输入参数：double类型的变量(工资的总额)
+* 输出参数：无
+* 返 回 值: 税金的额度
+* Author ： Robert
+* Create Time: 2021-2-15
+* 其他说明：无
+* 修改说明：无
+*****************************************************/
+double TAXES(double wage);    
 int main()
 {
     float hours, WageSum, Taxes, NetIncome;

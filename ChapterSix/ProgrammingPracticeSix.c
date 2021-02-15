@@ -1,4 +1,12 @@
+/**********************************************
+*File name:     ProgrammingPracticeSix.c
+*Description:   C primer plus 第六章课后编程6题
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-15
+*********************************************/
 #include <stdio.h>
+//函数功能：程序打印一个表格，输入上下限。每一行打印一个整数，该数的平方和改善的立方。
 int main()
 {
     int UpperLimit, LowerLimit;

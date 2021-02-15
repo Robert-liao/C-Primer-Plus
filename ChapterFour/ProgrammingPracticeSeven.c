@@ -1,3 +1,10 @@
+/**********************************************
+*File name:    ProgrammingPracticeSeven.c
+*Description:   C primer plus 第四章课后编程7题
+*Version：      1.0
+*Author：       Robert
+*Create Time:   2021-2-15
+*********************************************/
 #include <stdio.h>
 #include<float.h>
 int main()
